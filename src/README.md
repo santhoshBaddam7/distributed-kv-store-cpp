@@ -34,23 +34,6 @@ Primary → Replica replication
 
 Architecture
 
-Clients
-   │
-   ▼
-TCP Server (Primary)
-   │
-   ├── Command Parser
-   │
-   ├── Key-Value Store (Hash Map)
-   │
-   ├── Persistence (disk)
-   │
-   ├── TTL Expiration Worker
-   │
-   └── Replication Module
-            │
-            ▼
-        Replica Server
 
 
 ---
@@ -92,7 +75,7 @@ REPLICA
 ---
 
 Project Structure
-
+```BASH
 redis-clone-cpp/
 │
 ├── src/
@@ -114,7 +97,7 @@ redis-clone-cpp/
 
 
 ---
-
+```
 Build and Run
 
 Compile
